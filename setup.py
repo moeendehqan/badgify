@@ -6,12 +6,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="badgify",
     version="0.1.0",
-    author="moeen dehqan",
-    author_email="moein.dehghan@example.com",
+    author="Moeen Dehqan",
+    author_email="moeen.dehqan@gmail.com",
     description="A Django app for generating dynamic SVG badges with customizable styles, colors, and RTL/LTR support",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/moeendehqan/badgify",
+    project_urls={
+        "Bug Tracker": "https://github.com/moeendehqan/badgify/issues",
+        "Source Code": "https://github.com/moeendehqan/badgify",
+        "Documentation": "https://github.com/moeendehqan/badgify#readme",
+    },
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
