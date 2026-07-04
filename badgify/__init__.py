@@ -1,10 +1,10 @@
 """
-Dynamic Badge Generator for Django/GitLab/GitHub
+Badgify - Dynamic Badge Generator for Django/GitLab/GitHub
 A Python package that generates dynamic SVG badges with customizable styles, colors, and RTL/LTR support.
 """
 
 __version__ = "0.1.0"
-__author__ = "Your Name"
+__author__ = "moeen dehqan"
 
 from .generator import BadgeGenerator, BadgeStyle, ColorPalette
 

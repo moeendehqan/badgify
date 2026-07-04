@@ -1,17 +1,17 @@
 # Example Django Project Integration
 
-This example shows how to integrate `django-dynamic-badge` into your Django project.
+This example shows how to integrate `badgify` into your Django project.
 
 ## 1. Install the package
 
 ```bash
-pip install django-dynamic-badge
+pip install badgify
 ```
 
 Or if developing locally:
 
 ```bash
-cd /path/to/django-dynamic-badge
+cd /path/to/badgify
 pip install -e .
 ```
 
@@ -22,7 +22,7 @@ In your `settings.py`:
 ```python
 INSTALLED_APPS = [
     # ... your other apps
-    'django_dynamic_badge',
+    'badgify',
 ]
 ```
 
@@ -35,7 +35,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # ... your other URLs
-    path('badge/', include('django_dynamic_badge.urls')),
+    path('badge/', include('badgify.urls')),
 ]
 ```
 
@@ -66,7 +66,7 @@ urlpatterns = [
 
 ```python
 from django.shortcuts import render
-from django_dynamic_badge import BadgeGenerator, BadgeStyle, ColorPalette
+from badgify import BadgeGenerator, BadgeStyle, ColorPalette
 
 def project_status(request):
     # Generate badges programmatically
@@ -143,7 +143,7 @@ CACHES = {
 You can create custom badge styles by extending the `BadgeGenerator` class:
 
 ```python
-from django_dynamic_badge.generator import BadgeGenerator
+from badgify.generator import BadgeGenerator
 
 class CustomBadgeGenerator(BadgeGenerator):
     def _generate_custom_style(self, label, message, *args, **kwargs):
@@ -174,7 +174,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_dynamic_badge',
+    'badgify',
 ]
 ```
 
@@ -185,7 +185,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('badge/', include('django_dynamic_badge.urls')),
+    path('badge/', include('badgify.urls')),
 ]
 ```
 

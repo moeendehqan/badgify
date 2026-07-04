@@ -1,5 +1,5 @@
 """
-Django Template Tags for Dynamic Badge Generation
+Badgify - Django Template Tags for Dynamic Badge Generation
 """
 
 from django import template
@@ -74,7 +74,7 @@ def badge_url(label, message, style='flat', color=None, label_color=None, rtl=Fa
     """
     from django.urls import reverse
     
-    base_url = reverse('django_dynamic_badge:badge')
+    base_url = reverse('badgify:badge')
     
     # Build query string
     params = [f'label={label}', f'message={message}']

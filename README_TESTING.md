@@ -1,4 +1,4 @@
-# راهنمای تست پکیج Django Dynamic Badge
+# راهنمای تست پکیج Badgify
 
 ## روش‌های مختلف تست
 
@@ -39,7 +39,7 @@ python3
 ```
 
 ```python
-from django_dynamic_badge.generator import BadgeGenerator, BadgeStyle
+from badgify.generator import BadgeGenerator, BadgeStyle
 
 # مثال ساده
 gen = BadgeGenerator(style=BadgeStyle.FLAT)
@@ -69,7 +69,7 @@ pip install -e .
 ```python
 INSTALLED_APPS = [
     # ...
-    'django_dynamic_badge',
+    'badgify',
 ]
 ```
 
@@ -80,7 +80,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # ...
-    path('badges/', include('django_dynamic_badge.urls')),
+    path('badges/', include('badgify.urls')),
 ]
 ```
 
@@ -93,7 +93,7 @@ urlpatterns = [
 {% dynamic_badge "Version" "1.0.0" %}
 
 <!-- روش ۲: استفاده از view -->
-<img src="{% url 'badge_endpoint' %}?label=Build&message=Passing&style=flat-square">
+<img src="{% url 'badgify:badge' %}?label=Build&message=Passing&style=flat-square">
 ```
 
 #### دسترسی مستقیم از طریق URL:

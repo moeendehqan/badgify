@@ -1,9 +1,9 @@
 """
-Tests for Django Dynamic Badge Generator
+Tests for Badgify - Dynamic Badge Generator
 """
 
 import unittest
-from django_dynamic_badge.generator import BadgeGenerator, BadgeStyle, ColorPalette
+from badgify.generator import BadgeGenerator, BadgeStyle, ColorPalette
 
 
 class TestBadgeGenerator(unittest.TestCase):

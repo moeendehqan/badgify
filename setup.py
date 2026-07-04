@@ -4,14 +4,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="django-dynamic-badge",
+    name="badgify",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="moeen dehqan",
+    author_email="moein.dehghan@example.com",
     description="A Django app for generating dynamic SVG badges with customizable styles, colors, and RTL/LTR support",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/django-dynamic-badge",
+    url="https://github.com/moeendehqan/badgify",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -40,5 +40,5 @@ setup(
     ],
     include_package_data=True,
     zip_safe=False,
-    keywords=["django", "badge", "svg", "dynamic", "shields", "gitlab", "github", "rtl"],
+    keywords=["django", "badge", "svg", "dynamic", "shields", "gitlab", "github", "rtl", "badgify"],
 )
