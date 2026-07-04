@@ -4,6 +4,33 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+.Python
+python/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment
+.env
+.env.local
+.env.*
+.venv/
+venv/
+ENV/
+
+# Testing
+.coverage
+htmlcov/
+.nox/
+.tox/
+.coverage*
+.cache
+.pytest_cache/
+.hypothesis/
 
 # Distribution / packaging
 .Python
@@ -21,11 +48,6 @@ var/
 wheels/
 *.egg-info/
 .installed.cfg
-*.egg
-
-# Environment
-.ENV
-.env
-.env.local
-.env.*
+*.egg-build/
+MANIFEST
 ```

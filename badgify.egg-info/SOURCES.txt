@@ -1,5 +1,6 @@
 LICENSE
 README.md
+pyproject.toml
 setup.py
 badgify/__init__.py
 badgify/apps.py
