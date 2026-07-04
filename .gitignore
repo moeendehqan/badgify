@@ -1,4 +1,3 @@
-```
 # CI/CD
 .github/
-```
+*/__pycache__/*
