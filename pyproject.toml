@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "badgify"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Django app to generate beautiful badges dynamically with customizable styles, colors, and labels."
 readme = "README.md"
 license = {text = "MIT"}
@@ -43,7 +43,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
 ]
 requires-python = ">=3.8"
-dependencies = []
+dependencies = ["Django>=3.2"]
 
 [project.optional-dependencies]
 dev = [
@@ -55,12 +55,12 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/moeende/badgify"
-Documentation = "https://github.com/moeende/badgify#readme"
-Repository = "https://github.com/moeende/badgify.git"
-Issues = "https://github.com/moeende/badgify/issues"
-Changelog = "https://github.com/moeende/badgify/blob/main/CHANGELOG.md"
-Author = "https://github.com/moeende"
+Homepage = "https://github.com/moeendehqan/badgify"
+Documentation = "https://github.com/moeendehqan/badgify#readme"
+Repository = "https://github.com/moeendehqan/badgify.git"
+Issues = "https://github.com/moeendehqan/badgify/issues"
+Changelog = "https://github.com/moeendehqan/badgify/blob/main/CHANGELOG.md"
+Author = "https://github.com/moeendehqan"
 
 [tool.setuptools]
 packages = ["badgify", "badgify.templatetags"]

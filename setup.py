@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="badgify",
-    version="0.1.0",
+    version="0.1.1",
     author="Moeen Dehqan",
     author_email="moeen.dehqan@gmail.com",
     description="A Django app for generating dynamic SVG badges with customizable styles, colors, and RTL/LTR support",
