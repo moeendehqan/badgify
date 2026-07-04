@@ -1,5 +1,5 @@
 """
-Django URL Configuration for Dynamic Badge Generation
+Badgify - Django URL Configuration for Dynamic Badge Generation
 
 Include these URLs in your main urls.py:
 
@@ -7,7 +7,7 @@ Include these URLs in your main urls.py:
     
     urlpatterns = [
         # ... your other URLs
-        path('badge/', include('django_dynamic_badge.urls')),
+        path('badge/', include('badgify.urls')),
     ]
 """
 
@@ -15,7 +15,7 @@ from django.urls import path
 
 from .views import BadgeView, StaticBadgeView, badge_view
 
-app_name = 'django_dynamic_badge'
+app_name = 'badgify'
 
 urlpatterns = [
     # Main badge endpoint (class-based view)

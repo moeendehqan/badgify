@@ -1,5 +1,5 @@
 """
-Django Views for Dynamic Badge Generation
+Badgify - Django Views for Dynamic Badge Generation
 
 This module provides Django views that can be integrated into your Django project
 to serve dynamic SVG badges.

@@ -1,4 +1,4 @@
-# Django Dynamic Badge
+# Badgify
 
 A Django app for generating dynamic SVG badges with customizable styles, colors, and RTL/LTR support. Similar to shields.io but self-hosted in your Django project.
 
@@ -15,14 +15,14 @@ A Django app for generating dynamic SVG badges with customizable styles, colors,
 ## Installation
 
 ```bash
-pip install django-dynamic-badge
+pip install badgify
 ```
 
 Or install from source:
 
 ```bash
-git clone https://github.com/yourusername/django-dynamic-badge.git
-cd django-dynamic-badge
+git clone https://github.com/moeendehqan/badgify.git
+cd badgify
 pip install -e .
 ```
 
@@ -33,7 +33,7 @@ Add the app to your `INSTALLED_APPS` in `settings.py`:
 ```python
 INSTALLED_APPS = [
     # ...
-    'django_dynamic_badge',
+    'badgify',
 ]
 ```
 
@@ -44,7 +44,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # ...
-    path('badge/', include('django_dynamic_badge.urls')),
+    path('badge/', include('badgify.urls')),
 ]
 ```
 
@@ -90,7 +90,7 @@ Load the template tags and use them in your templates:
 ### 3. In Python Code
 
 ```python
-from django_dynamic_badge import BadgeGenerator, BadgeStyle, ColorPalette
+from badgify import BadgeGenerator, BadgeStyle, ColorPalette
 
 # Create a generator
 generator = BadgeGenerator(
@@ -200,6 +200,22 @@ python -m pytest tests/
 
 ```bash
 python setup.py sdist bdist_wheel
+```
+
+### Publishing to PyPI
+
+```bash
+# Install twine if you haven't already
+pip install twine
+
+# Build the package
+python setup.py sdist bdist_wheel
+
+# Upload to TestPyPI (for testing)
+twine upload --repository testpypi dist/*
+
+# Upload to PyPI
+twine upload dist/*
 ```
 
 ## License

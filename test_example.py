@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-مثال عملی برای تست پکیج Django Dynamic Badge
+مثال عملی برای تست پکیج Badgify
 این اسکریپت نحوه استفاده از پکیج را نشان می‌دهد
 """
 
-from django_dynamic_badge.generator import BadgeGenerator, BadgeStyle
+from badgify.generator import BadgeGenerator, BadgeStyle
 
 def main():
     print("=" * 60)
-    print("تست پکیج Django Dynamic Badge")
+    print("تست پکیج Badgify")
     print("=" * 60)
     print()
     
